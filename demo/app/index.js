@@ -1,6 +1,6 @@
 var React = require ('react');
 var ReactDOM = require('react-dom');
-var App = require('./components/App');
+var Game = require('./components/Game');
 const reactContainer = document.getElementById('mountNode');
 
-ReactDOM.render(<App />,reactContainer)
+ReactDOM.render(<Game/>,reactContainer)

@@ -3,6 +3,68 @@
   <head>
     <meta charset="utf-8">
       <title>Test</title>
+    <style>
+    .game {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .body {
+      text-align: center;
+      position: relative;
+      background-color: #efefef;
+      border: thin solid #ddd;
+    }
+
+    .meaning, .ink {
+      font-size: 350%;
+      font-weight: bold;
+      margin: 10px;
+    }
+
+    .help {
+      color: #666;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .buttons button {
+      margin: 20px;
+      font-size: 200%;
+      padding: 10px 20px;
+      background-color: #fff;
+      border: thin solid #ccc;
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    .game_status {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.85; /* was .85 */
+      background-color: #eee;
+      font-size: 125px;
+      font-weight: bold;
+    }
+
+    .status_playing {
+      display: none;
+    }
+
+    .status_correct:after {
+      content: "\2713";
+      color: green;
+    }
+
+    .status_wrong:after {
+      content: "\2717";
+      color: red;
+    }
+
+    </style>
   </head>
 
   <body>

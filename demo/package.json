@@ -4,8 +4,8 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server --port 3000",
+    "build": "webpack --mode development",
+    "start": "webpack-dev-server --port 3000 --mode development",
     "deploy": "npm run build && npm run git-commit && npm run git-push"
   },
   "author": "",
